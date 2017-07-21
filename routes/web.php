@@ -23,4 +23,4 @@ $app->post('/delete-emprestimo/{id}', 'EmprestimoController@destroy');
 $app->get('/matriz',        'LogicaController@matrizParImpar');
 $app->get('/idade',        'LogicaController@idadeCalculo');
 $app->get('/palavra',        'LogicaController@palavra');
-$app->get('/fibonacci',        'LogicaController@index');
+$app->get('/fibonacci',        'LogicaController@fibonacci');

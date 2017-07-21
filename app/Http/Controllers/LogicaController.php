@@ -63,4 +63,9 @@ class LogicaController extends Controller
 
 	}	
 
+	public function fibonacci() {
+	    return view('fibonacci');
+
+	}		
+
 }

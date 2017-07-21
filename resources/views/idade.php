@@ -27,7 +27,7 @@
 
        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          <ul class="nav navbar-nav">
-           <li><a href="#">Empréstimo de Livros<span class="sr-only">(current)</span></a></li>
+           <li><a href="">Empréstimo de Livros<span class="sr-only">(current)</span></a></li>
            <li class="active"><a href="matriz">Matriz</a></li>
            <li><a href="idade">Cálculo de idade</a></li>
            <li><a href="palavra">Impressão de palavra</a></li>
