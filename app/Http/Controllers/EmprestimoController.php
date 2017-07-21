@@ -16,15 +16,14 @@ class EmprestimoController extends Controller
 	    $this->validate($request, [
 	        'livro'  => 'required',
 	        'tipo' => 'required',
-	        'name'  => 'required'
+	        'nome'  => 'required'
 	    ]); 
-	    // $emprestimo   = new emprestimo;
-	    // $emprestimo->email  = $request->input('email');
-	    // $emprestimo->password  = Hash::make( $request->input('password') );
-	    // $emprestimo->name  = $request->input('name');
-	    // $emprestimo->address  = $request->input('address');
-	    // $emprestimo->phone  = $request->input('phone');
-	    // $emprestimo->save();
+	    response()->json(app('db')->insert("insert into emprestimos (nome, livro, tipo) values (?, ?, ?)",
+	    [
+	    	$request->input('nome'),
+	    	$request->input('livro'),
+	    	$request->input('tipo')
+	    ]));
 	}
 
 	public function index(){ 
@@ -32,8 +31,11 @@ class EmprestimoController extends Controller
 	    //return emprestimo::all();
 	}
 
-	public function show($id){ 
-	    return emprestimo::find($id); 
+	public function show(Request $request, $id){ 
+	    return response()->json(app('db')->select('select * from emprestimos where id = ?',
+	    [
+	    $id
+	    ]));
 	}
 
 	public function update(Request $request, $id){ 
@@ -57,9 +59,11 @@ class EmprestimoController extends Controller
 
 	public function destroy(Request $request){
 	    $this->validate($request, [
-	        'id' => 'required|exists:emprestimos'
+	        'id' => 'required'
 	    ]);
-	    $emprestimo = emprestimo::find($request->input('id'));
-	    $emprestimo->delete();
+	    response()->json(app('db')->delete("delete from emprestimos where id = ?",
+	    [
+	    $request->input('id')
+	    ]));
 	}
 }
