@@ -28,10 +28,10 @@
        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          <ul class="nav navbar-nav">
            <li class="active"><a href="#">Empréstimo de Livros<span class="sr-only">(current)</span></a></li>
-           <li><a href="#">Matriz</a></li>
-           <li><a href="#">Cálculo de idade</a></li>
-           <li><a href="#">Impressão de palavra</a></li>
-           <li><a href="#">Sequência de Fibonacci </a></li>
+           <li><a href="matriz">Matriz</a></li>
+           <li><a href="idade">Cálculo de idade</a></li>
+           <li><a href="palavra">Impressão de palavra</a></li>
+           <li><a href="fibonacci">Sequência de Fibonacci </a></li>
          </ul>
        </div>
      </div>
@@ -171,6 +171,6 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
    <script src="js/emprestimoApp.js"></script>
-   
+
 </body>
 </html>

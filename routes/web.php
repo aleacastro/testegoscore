@@ -18,5 +18,9 @@ $app->get('/', function () use ($app) {
 $app->post('/create-emprestimo',      'EmprestimoController@store');
 $app->get('/read-emprestimos',        'EmprestimoController@index');
 $app->get('/read-emprestimo/{id}',    'EmprestimoController@show');
-$app->post('/edit-emprestimo/{id}', 'EmprestimoController@update');
+$app->post('/edit-emprestimo/{id}',   'EmprestimoController@update');
 $app->post('/delete-emprestimo/{id}', 'EmprestimoController@destroy');
+$app->get('/matriz',        'LogicaController@matrizParImpar');
+$app->get('/idade',        'LogicaController@idade');
+$app->get('/palavra',        'LogicaController@palavra');
+$app->get('/fibonacci',        'LogicaController@index');
