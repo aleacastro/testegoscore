@@ -54,14 +54,13 @@
       var index;
       var a = '';
       var b = '';
-      var b = '';
       
-      for (index = 0; index < 5; ++index) {
+      for (index = 0; index < 4; ++index) {
           
           a = a.concat($('#palavra').val() + ' ');
-          c = b.concat(a + '\n');
+          b = b.concat(a + '<br>');
       }
-$('#resultado').html(c);
+$('#resultado').html(b);
       
 
     }  
@@ -72,16 +71,16 @@ $('#resultado').html(c);
                   <div class="form-group">
                      <label for="inputEmail3" class="col-sm-3 control-label">Nome</label>
                      <div class="col-sm-9">
-                        <input type="text" maxlength="50" class="form-control" id="palavra" onkeydown="myfunction();" placeholder="Palavra" value="">
+                        <input type="text" maxlength="50" class="form-control" id="palavra" onkeyup="myfunction();" placeholder="Palavra" value="">
                      </div>
                   </div>
                 </form>
             </div>
        </br>
           
-      <label id='resultado'>
+      <div id='resultado'>
 
-       </label>         
+       </div>         
        </div>
    </div>   
 
