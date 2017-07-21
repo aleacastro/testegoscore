@@ -38,11 +38,11 @@
    </nav>
 
 
-   <div ng-app="myApp" ng-controller="matrizCtrl">
-       <h3>Array gerado via função randomica, sendo visualizado somente os pares, os impares e a matriz total</h3>
-       <pre>
-          <?php print_r($arrayParImpar); ?>
-      </pre>
+   <div ng-app="myApp" ng-controller="idadeCtrl">
+       <h3>Chico tem 1,50m e cresce 2 centímetros por ano, enquanto Juca tem 1,10m e cresce 3 centímetros por ano. Construir um algoritmos que calcule e imprima quantos anos serão necessários para que Juca seja maior que Chico</h3>
+       </div>
+       </br>
+          Faltam <?php print_r($idade); ?> anos para Juca ser maior que Chico.
 
    </div>   
 
